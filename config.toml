@@ -1,0 +1,6 @@
+[runtime]
+qwen_path = "/path/to/qwen/runtime"
+shell_plugins_dir = "/path/to/shell/plugins"
+
+[graph]
+schema = "initial_schema_v1"
