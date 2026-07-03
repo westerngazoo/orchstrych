@@ -1,0 +1,18 @@
+[package]
+name = "orch-engine"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+orch-core = { workspace = true }
+orch-db = { workspace = true }
+orch-llm = { workspace = true }
+orch-tools = { workspace = true }
+tokio = { workspace = true }
+uuid = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+async-trait = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }

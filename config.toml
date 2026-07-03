@@ -1,6 +1,16 @@
 [runtime]
-qwen_path = "/path/to/qwen/runtime"
-shell_plugins_dir = "/path/to/shell/plugins"
+llm_endpoint = "http://127.0.0.1:8080"
+llm_backend = "llamacpp"
+shell_plugins_dir = "./plugins"
+grammars_dir = "./grammars"
+
+[db]
+path = "orchstrych.redb"
 
 [graph]
-schema = "initial_schema_v1"
+reachability_threshold = 0.15
+scoring_dimensions = ["reasoning", "tool_use", "generation"]
+
+[agents.default]
+temperature = 0.7
+max_tokens = 2048
